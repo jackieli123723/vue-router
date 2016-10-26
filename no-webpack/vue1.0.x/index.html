@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>David Adams</title>
+        <!-- CSS Reset -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" media="screen" title="no title" charset="utf-8">
+        <!-- FONTS -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:500' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
+        <!-- Hover effects -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css" media="screen" title="no title" charset="utf-8">
+        <!-- STYLES -->
+        <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+        <div id="app" class="wrapper">
+            <!-- inject everything here -->
+            <router-view></router-view>
+        </div>
+
+
+        <!-- home page view -->
+        <template id="home-content">
+            <table>
+                <tr>
+                    <td>
+                        <a v-link="{ path: '/about' }" class="hvr-shutter-in-horizontal">About</a>
+                    </td>
+                    <td>
+                        <a v-link="{ path: '/work' }" class="hvr-shutter-in-horizontal">Workin' it</a>
+                    </td>
+                    <td align="center">
+                        <div class="face">
+                        </div>
+                    </td>
+                    <td>
+                        <a v-link="{ path: '/skills' }" class="hvr-shutter-in-horizontal">Skills</a>
+                    </td>
+                    <td>
+                        <a v-link="{ path: '/projects' }" class="hvr-shutter-in-horizontal">Projects</a>
+                    </td>
+                </tr>
+            </table>
+            <div class="im-a-lawyer">
+                <h1>David Adams,</h1>
+                <br />
+                <h2>Web Developer</h2>
+            </div>
+        </template>
+
+
+        <!-- appears on every view -->
+        <div class="send-me-mail">
+            <p>Send me mail: russianid1@gmail.com</p>
+            <br />
+            <br />
+            <p class="vue-blurb">This is a single page site using VueJS and VueJS router.<br />Check out the <a href="https://github.com/soundslikebliss/vue_test_1" target="_blank">code</p>
+        </div>
+
+
+
+    <!-- VueJS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+    <!-- Vue router -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/0.7.13/vue-router.min.js"></script>
+    <script type="text/javascript" src="components.js"></script>
+
+    </body>
+</html>

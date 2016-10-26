@@ -1,0 +1,105 @@
+body {
+}
+
+/*Typography*/
+p, h1, h2, h3, li {
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: normal;
+}
+h1 {
+    font-size: 26px;
+}
+h2 {
+    font-size: 22px;
+}
+h3 {
+    font-size: 18px;
+}
+li {
+    padding-bottom: .5em;
+}
+
+
+.wrapper {
+    background-color: #eee;
+    width: 100%;
+    margin-top: 8em;
+    text-align: center;
+}
+
+/*Navigation elements, links. Table layout for easy vertical alignment*/
+table {
+    width: 100%;
+}
+td {
+    width: 20%;
+    vertical-align: middle;
+    text-align: center;
+    padding: 1em 0;
+}
+
+a {
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 26px;
+    text-decoration: none;
+    padding: .5em;
+}
+
+/*hover effects*/
+.hvr-shutter-in-horizontal:before {
+        background-color: #eee;
+}
+
+/*Ma face*/
+.face {
+    background-image: url('me1.jpg');
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.im-a-lawyer {
+    padding: 1em;
+}
+
+.send-me-mail {
+    margin-top:2em;
+    text-align: center;
+}
+.vue-blurb {
+    font-size: 12px;
+}
+.vue-blurb a {
+    font-size: 12px;
+    color: pink;
+}
+
+.pages-content {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: left;
+}
+.page-button {
+    margin-top: 2em;
+}
+.project-link {
+    font-size: 14px;
+    padding: 0;
+}
+.pad-top {
+    padding-top: 1.5em;
+}
+
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        margin-top: 0;
+    }
+    td {
+        display: block;
+        width: 100%;
+    }
+}
